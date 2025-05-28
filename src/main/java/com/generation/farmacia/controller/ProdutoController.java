@@ -91,29 +91,7 @@ public class ProdutoController {
 		produtoRepository.deleteById(id);
 
 	}
-	/**
-	 * Retorna uma lista de produtos cujo preço seja maior que o valor informado.
-	 *
-	 * @param preco Valor mínimo que os produtos devem ter para serem listados.
-	 * @return Lista de produtos com preço superior ao valor especificado.
-	 *
-	 * Exemplo de requisição:
-	 * GET /produtos/maior/100.00
-	 */
-	@GetMapping("/maior/{preco}") 
-	public ResponseEntity<List<Produto>> getByPrecoMaior(@PathVariable BigDecimal preco) {
-		return ResponseEntity.ok(produtoRepository.findAllByPrecoGreaterThan(preco));
-	}
-	
-	/**
-	 * Retorna uma lista de produtos cujo preço seja menor que o valor informado.
-	 *
-	 * @param preco Valor máximo que os produtos devem ter para serem listados.
-	 * @return Lista de produtos com preço inferior ao valor especificado.
-	 *
-	 * Exemplo de requisição:
-	 * GET /produtos/menor/200.00
-	 */
+
 	@GetMapping("/menor/{preco}")
 	public ResponseEntity<List<Produto>> getByPrecoMenor(@PathVariable BigDecimal preco) {
 		return ResponseEntity.ok(produtoRepository.findAllByPrecoLessThan(preco));
