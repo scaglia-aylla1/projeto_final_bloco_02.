@@ -1,6 +1,6 @@
-# 🕹️ Loja Games - Backend com Spring Boot
+# 💊 E-commerce Farmácia com Spring Boot
 
-Este é um projeto de backend desenvolvido com **Spring Boot** como parte da trilha de formação da **Generation Brasil**. A aplicação simula uma **loja de games**, permitindo o cadastro e a manipulação de produtos e categorias.
+Este é um projeto de backend desenvolvido com **Spring Boot** como parte da trilha de formação da **Generation Brasil**. A aplicação simula uma **E-Commerce de Farmácia**, permitindo o cadastro e a manipulação de produtos e categorias.
 
 
 ## 🚀Tecnologias utilizadas 
@@ -46,7 +46,7 @@ Este é um projeto de backend desenvolvido com **Spring Boot** como parte da tri
 Configure o banco de dados no arquivo `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/db_loja_games
+spring.datasource.url=jdbc:mysql://localhost:3306/db_farmacia
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
@@ -75,11 +75,11 @@ Os endpoints da API foram testadas com o Insomnia. Você pode realizar os seguin
 src
 └── main
     └── java
-        └── com.generation.lojagames
+        └── com.generation.farmacia
             ├── controller
             ├── model
             ├── repository
-            └── LojaGamesApplication.java
+            └── FarmaciaApplication.java
 
 ```
 ## 🧑‍💻 Desenvolvido por
